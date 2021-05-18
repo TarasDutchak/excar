@@ -96,6 +96,31 @@ h1 {
     line-height: 68px;
 }
 
+.section-title {
+    color: #000;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    font-variant: small-caps;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.section-title.underlinered:after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 64px;
+    background: #EC0F16;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+}
+
+
+
+
+
 
 /* general end*/
 
@@ -332,12 +357,15 @@ h1 {
     height: 690px;
     background: linear-gradient(179.39deg, #FFFFFF 60.71%, #F5F5F5 99.36%);
 }
+
 .mainparallaxsect__parallax #scene {
     height: 690px;
 }
+
 .mainparallaxsect__parallax #scene div {
     position: absolute !important;
 }
+
 .mainparallaxsect__parallax #scene div:first-child {
     top: 55px !important;
     right: 486px !important;
@@ -357,12 +385,152 @@ h1 {
 
 .servicesdark__col {
     position: relative;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
+.servicesdark__box {
+    height: 320px;
+    position: relative;
+    padding: 36px;
+    overflow: hidden;
+}
 
+.servicesdark__box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 30, 30, .6);
+    transition: .5s;
+}
+
+.servicesdark__box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    animation-timing-function: ease-in-out;
+}
+
+.servicesdark__boxcontent {
+    position: relative;
+    z-index: 2;
+}
+
+.servicesdark__boxcontent img {
+    opacity: .5;
+    width: 48px;
+    margin-bottom: 26px;
+    transition: .3s;
+}
+
+.servicesdark__boxcontent .title {
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 26px;
+}
+
+.servicesdark__boxcontent .descr {
+    margin: 0;
+    color: rgba(255, 255, 255, .8);
+    font-size: 15px;
+    line-height: 21px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.servicesdark__link {
+    width: 120px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(236, 15, 22, 0.5);
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: .3s;
+}
+
+.servicesdark__box:hover .servicesdark__boxcontent img {
+    opacity: 1;
+}
+
+.servicesdark__box:hover .servicesdark__link {
+    background: #EC0F16;
+}
+
+.servicesdark__box:hover>img {
+    transform: scale(1.1);
+}
+
+.servicesdark__box:hover:after {
+    background: rgba(19, 18, 18, .6);
+}
+
+.servicesdark {
+    margin-top: -145px;
+}
+
+.howitworks {
+    padding: 105px 0 100px;
+}
+
+.howitworks .section-title  {
+    margin-bottom: 88px;
+}
+
+.howitworks .section-boldtext {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    font-weight: bold;
+    max-width: 385px;
+}
+.howitworks .descr {
+    max-width: 385px;
+}
+.howitworks .descr p {
+    margin-bottom: 14px;
+    color: #000;
+}
+
+.howitworks a {
+    color: #EC0F16;
+    font-weight: bold;
+}
+
+.howitworks a:hover {
+    text-decoration: underline;
+}
+
+.howitworks__box {
+    position: relative;
+    overflow: hidden;
+    background: #F2F2F2;
+    height: 168px;
+    margin-bottom: 20px;
+}
 
 
 
