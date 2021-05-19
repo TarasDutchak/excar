@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: #101010;
+    color: #000;
 }
 
 .myexcontainer {
@@ -68,7 +68,6 @@ a:hover {
 }
 
 .sectsubtitle {
-    color: #000000;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: 500;
@@ -90,14 +89,12 @@ a:hover {
 }
 
 h1 {
-    color: #000000;
     font-weight: bold;
     font-size: 56px;
     line-height: 68px;
 }
 
 .section-title {
-    color: #000;
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
@@ -182,9 +179,9 @@ h1 {
     text-decoration: none;
     font-size: 15px;
     line-height: 18px;
-    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
+    color: #000;
 }
 
 .header_nav li:not(:last-child),
@@ -219,9 +216,9 @@ h1 {
     font-size: 15px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #000000;
     text-decoration: none;
     transition: .3s;
+    color: #000;
 }
 
 .header__sign li:not(:last-child) {
@@ -241,7 +238,6 @@ h1 {
     display: inline-block;
     width: 1px;
     height: 12px;
-    background: #000;
     position: absolute;
     right: -15px;
     bottom: 3px;
@@ -276,7 +272,6 @@ h1 {
     padding-left: 20px;
     padding-right: 45px;
     font-size: 15px;
-    color: #000;
 }
 
 .header__serchinputfield input::placeholder {
@@ -305,10 +300,10 @@ h1 {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
-    color: #000;
     transition: .3s;
     display: flex;
     align-items: center;
+    color: #000;
 }
 
 .phonelink svg {
@@ -480,7 +475,7 @@ h1 {
 }
 
 .servicesdark__box:hover>img {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(4deg);
 }
 
 .servicesdark__box:hover:after {
@@ -495,7 +490,7 @@ h1 {
     padding: 105px 0 100px;
 }
 
-.howitworks .section-title  {
+.howitworks .section-title {
     margin-bottom: 88px;
 }
 
@@ -503,16 +498,16 @@ h1 {
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 30px;
-    color: #000;
     font-weight: bold;
     max-width: 385px;
 }
+
 .howitworks .descr {
     max-width: 385px;
 }
+
 .howitworks .descr p {
     margin-bottom: 14px;
-    color: #000;
 }
 
 .howitworks a {
@@ -530,7 +525,540 @@ h1 {
     background: #F2F2F2;
     height: 168px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 18px 30px 18px 64px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
 }
+
+.howitworks .col-xl-9 .col-lg-6:nth-child(1) .howitworks__box,
+.howitworks .col-xl-9 .col-lg-6:nth-child(5) .howitworks__box {
+    background-image: url('../img/tire1.png');
+}
+
+.howitworks .col-xl-9 .col-lg-6:nth-child(2) .howitworks__box,
+.howitworks .col-xl-9 .col-lg-6:nth-child(6) .howitworks__box {
+    background-image: url('../img/tire2.png');
+}
+
+.howitworks .col-xl-9 .col-lg-6:nth-child(3) .howitworks__box,
+.howitworks .col-xl-9 .col-lg-6:nth-child(7) .howitworks__box {
+    background-image: url('../img/tire3.png');
+}
+
+.howitworks .col-xl-9 .col-lg-6:nth-child(4) .howitworks__box,
+.howitworks .col-xl-9 .col-lg-6:nth-child(8) .howitworks__box {
+    background-image: url('../img/tire4.png');
+}
+
+.howitworks__box .hiwnum {
+    display: flex;
+    align-items: flex-end;
+    width: 98px;
+    height: 92px;
+    position: relative;
+}
+
+.howitworks__box .hiwnum span {
+    color: #EC0F16;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.howitworks__box .hiwnum img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+.howitworks__box .hiwdescr {
+    width: calc(100% - 98px);
+    padding-left: 38px;
+}
+
+.howitworks__box .hiwdescr p {
+    margin: 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 250px;
+}
+
+.usedcars {
+    padding: 84px 0 60px;
+    background: linear-gradient(180deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 83.44%);
+}
+
+.usedcars .section-title {
+    text-align: center;
+}
+
+.usedcarscard__img {
+    overflow: hidden;
+}
+
+.usedcarscard__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.usedcarscard__info {
+    padding: 26px 70px 22px 24px;
+    position: relative;
+}
+
+.usedcarscard__info .title {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.usedcarscard__info .descr {
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.usedcarscard__info .price {
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+    transition: .3s;
+}
+
+.arrowanimation {
+    width: 48px;
+    height: 24px;
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.arrowanimation .redpoint {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #E7242A;
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrowanimation img {
+    position: absolute;
+    transition: .3s;
+    transform: translate(-150%, -50%);
+    top: 50%;
+}
+
+.usedcarscard {
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+.usedcarscard:hover .arrowanimation .redpoint {
+    left: 150%;
+}
+
+.usedcarscard:hover .arrowanimation img {
+    right: 0;
+    left: initial;
+    transform: translate(0%, -50%);
+}
+
+.usedcarscard:hover {
+    background-color: #fff;
+    box-shadow: 0px 18px 80px rgba(0, 0, 0, 0.07), 0px 7.51997px 33.4221px rgba(0, 0, 0, 0.0345571), 0px 4.02054px 17.869px rgba(0, 0, 0, 0.0281663), 0px 2.25388px 10.0172px rgba(0, 0, 0, 0.0256993), 0px 1.19702px 5.32008px rgba(0, 0, 0, 0.0208133), 0px 0.498106px 2.21381px rgba(0, 0, 0, 0.0122481);
+}
+
+.usedcarscard:hover .usedcarscard__info .price {
+    color: #EC0F16;
+}
+
+.showmorecars {
+    margin-top: 44px;
+    background-image: url('../img/line.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.showmorecars a {
+    margin: 0 auto;
+}
+
+.faq {
+    padding: 60px 0 120px;
+}
+
+.card-header:first-child,
+.accordion>.card:first-of-type,
+.accordion>.card:last-of-type {
+    border-radius: 0;
+}
+
+.card-header {
+    border: none;
+    padding: 0;
+}
+
+.accordeon-title {
+    text-decoration: none !important;
+    color: #000000;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 36px 55px 36px 0;
+}
+
+.accordeon-title:hover {
+    color: #000;
+}
+
+.accordeon-title span {
+    display: inline-block;
+    width: 47px;
+    color: #828282;
+}
+
+.card {
+    border: none;
+    border-top: 1px solid #E0E0E0;
+}
+
+.card:last-child {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.accordeon-title .plussvg rect {
+    transition: .3s;
+}
+
+.accordeon-title.minus .plussvg rect:nth-child(2) {
+    opacity: 0;
+}
+
+.accordeon-title svg {
+    position: absolute;
+    right: 25px;
+}
+
+.card-body {
+    color: #4F4F4F;
+    line-height: 26px;
+    padding: 0 96px 36px 47px;
+}
+
+.card-body p {
+    margin: 0;
+    padding-left: 24px;
+    border-left: 1px solid #EC0F16;
+}
+
+.faq .section-title {
+    text-align: center;
+    margin-bottom: 84px;
+}
+
+.contactsfoot {
+    padding: 98px 0 58px;
+    position: relative;
+}
+
+.contactsfoot__bgpic {
+    height: 400px;
+    background-image: url('../img/footbg1.png');
+    background-size: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contactsfoot__rightsect {
+    padding: 79px 0;
+}
+
+.contactsfoot__rightsect .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 531px;
+    margin-bottom: 35px;
+}
+
+.contactsfoot__rightsect .title span {
+    color: #EC0F16;
+}
+
+.contactsfoot__rightsect form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contactsfoot__rightsect .fields {
+    max-width: 57%;
+    width: 100%;
+}
+
+.contactsfoot__rightsect .btnsect {
+    max-width: 27%;
+    width: 100%;
+    margin-left: 22px;
+}
+
+.contactsfoot__rightsect .fields input {
+    width: 100%;
+    height: 54px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 27px;
+}
+
+.contactsfoot__rightsect .fields input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .64);
+}
+
+.contactsfoot__rightsect .fields input:last-child {
+    margin-bottom: 0;
+}
+
+.contactsfoot__rightsect .btnsect input {
+    width: 100%;
+    height: 56px;
+    background: #EC0F16;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    transition: .3s;
+}
+
+.contactsfoot__rightsect .btnsect input:hover {
+    background: #fff;
+    color: #EC0F16;
+
+}
+
+.contactsfoot__leftsect {
+    padding-left: 20%;
+    padding-top: 45px;
+    position: relative;
+}
+
+.contactsfoot__leftsect .title {
+    position: relative;
+    margin-bottom: 82px;
+    color: #fff;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.contactsfoot__leftsect .title:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 2px;
+    width: 56px;
+    background: #EC0F16;
+}
+
+.contactsfoot__leftsect .phone {
+    position: relative;
+    padding-left: 45px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    transition: .3s;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+.contactsfoot__leftsect .phone:hover {
+    color: #EC0F16;
+}
+
+.contactsfoot__leftsect .phone svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contactsfoot__leftsect .phone svg path {
+    transition: .3s;
+}
+
+.contactsfoot__leftsect .phone:hover svg path {
+    fill: #EC0F16;
+}
+
+.contactsfoot__leftsect ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    max-width: 310px;
+}
+
+.contactsfoot__leftsect ul li,
+.contactsfoot__leftsect ul li a {
+    display: block;
+    margin-bottom: 36px;
+    padding-left: 20px;
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contactsfoot__leftsect ul li:before {
+    content: '/';
+    color: #EC0F16;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contactsfoot__leftsect ul li:last-child {
+    margin-bottom: 0;
+}
+
+.blackfig {
+    position: absolute;
+    left: 0;
+    top: -58px;
+    z-index: 2;
+    width: 100%;
+}
+
+.redfig {
+    position: absolute;
+    top: -98px;
+    z-index: -1;
+    width: 87%;
+    left: 20%;
+}
+
+.contactsfoot__leftsect *:not(img) {
+    position: relative;
+    z-index: 3;
+}
+
+.totop {
+    position: absolute;
+    top: -95px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: #101010;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+.totop span {
+    display: inline-block;
+    margin-left: 24px;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    box-shadow: 0px 18px 80px rgba(0, 0, 0, 0.07), 0px 7.51997px 33.4221px rgba(0, 0, 0, 0.0345571), 0px 4.02054px 17.869px rgba(0, 0, 0, 0.0281663), 0px 2.25388px 10.0172px rgba(0, 0, 0, 0.0256993), 0px 1.19702px 5.32008px rgba(0, 0, 0, 0.0208133), 0px 0.498106px 2.21381px rgba(0, 0, 0, 0.0122481);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totop:hover {
+    color: #EC0F16;
+}
+.totop svg path {
+    transition: .3s;
+}
+.totop:hover svg path {
+    fill: #EC0F16;
+}
+
+.contactsfoot .rightres {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
+.footer {
+    padding: 64px 0 48px 0;
+}
+.footer__nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav ul li {
+    margin-right: 50px;
+}
+
+.footer__nav ul li:last-child {
+    margin-right: 0;
+}
+
+.footer__nav ul li a {
+
+}
+
+
+
+
+
 
 
 
