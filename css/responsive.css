@@ -1,0 +1,770 @@
+@media(max-width:1600.8px) {
+    .header__leftbox {
+        max-width: 120px;
+    }
+
+    .header__rightbox {
+        max-width: calc(100% - 120px);
+    }
+
+    .phonelink svg {
+        margin-right: 18px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+    }
+
+    .phonelink {
+        padding-left: 30px;
+    }
+
+    .header_nav li:not(:last-child),
+    .header__language li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .header__signsect {
+        max-width: 270px;
+    }
+
+    .header__rightbox-toprow {
+        height: 50px;
+    }
+
+    .header ul li {
+        height: 50px;
+    }
+
+    .header__rightbox-toprow {
+        margin-bottom: 25px;
+    }
+
+    .header__serchinputfield button {
+        width: 20px;
+        height: 20px;
+        background-size: 100%;
+        right: 10px;
+    }
+
+    .header__serchinputfield input {
+        padding-left: 10px;
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .redbtn {
+        font-size: 14px;
+        width: 180px;
+        height: 44px;
+    }
+
+    .transparrbtn {
+        font-size: 14px;
+        width: 180px;
+        height: 44px;
+    }
+
+    .phonelink {
+        margin-right: 40px;
+    }
+
+    .header__searchbox {
+        max-width: 370px;
+    }
+
+    .sectsubtitle:after {
+        bottom: -15px;
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    .sectsubtitle {
+        margin-bottom: 80px;
+    }
+
+    .mainparallaxsect__parallax #scene {
+        height: 600px;
+    }
+
+    .mainparallaxsect__parallax #scene div:nth-child(2) {
+        bottom: 60px;
+        text-align: right;
+    }
+
+    .mainparallaxsect__parallax #scene div:nth-child(2) img {
+        max-width: 93%;
+    }
+
+    .mainparallaxsect__parallax #scene div:first-child {
+        right: 46% !important;
+        top: 85px !important;
+    }
+
+    .servicesdark__boxcontent img {
+        width: 36px;
+    }
+
+    .servicesdark__boxcontent .title {
+        font-size: 18px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    .servicesdark__box {
+        padding: 30px;
+    }
+
+    .servicesdark__link {
+        width: 110px;
+        height: 32px;
+    }
+
+    .howitworks {
+        padding: 80px 0 60px;
+    }
+
+    .howitworks__box .hiwnum span {
+        font-size: 42px;
+        line-height: normal;
+    }
+
+    .howitworks__box .hiwnum {
+        width: 90px;
+        height: 75px;
+    }
+
+    .howitworks__box .hiwdescr {
+        width: calc(100% - 90px);
+        padding-left: 20px;
+    }
+
+    .section-title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+
+    .section-title.underlinered:after {
+        bottom: -15px;
+    }
+
+    .howitworks .section-title {
+        margin-bottom: 65px;
+    }
+
+    .howitworks .section-boldtext {
+        margin-bottom: 20px;
+        font-size: 16px;
+        max-width: calc(100% - 30px);
+        line-height: 26px;
+    }
+
+    .howitworks .descr {
+        max-width: calc(100% - 30px);
+    }
+
+    .howitworks__box {
+        height: 140px;
+    }
+
+    .arrowanimation {
+        width: 30px;
+        height: 18px;
+    }
+
+    .usedcarscard:hover .arrowanimation img {
+        width: 100%;
+    }
+
+    .arrowanimation .redpoint {
+        width: 4px;
+        height: 4px;
+    }
+
+    .usedcarscard__info {
+        padding-right: 55px;
+    }
+
+    .faq {
+        padding: 40px 0 80px;
+    }
+
+    .faq .section-title {
+        margin-bottom: 50px;
+    }
+
+    .accordeon-title {
+        padding: 28px 55px 28px 0;
+    }
+
+    .accordeon-title svg {
+        width: 18px;
+    }
+
+    .contactsfoot__leftsect .title {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 60px;
+    }
+
+    .contactsfoot__leftsect .phone {
+        font-size: 26px;
+        padding-left: 38px;
+        line-height: normal;
+        margin-bottom: 25px;
+    }
+
+    .contactsfoot__leftsect .phone svg {
+        width: 22px;
+    }
+
+    .contactsfoot__leftsect ul li {
+        margin-bottom: 25px;
+    }
+
+    .contactsfoot__leftsect ul li a {
+        margin-bottom: 0;
+    }
+
+    .contactsfoot__rightsect .title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .contactsfoot__rightsect .fields input,
+    .contactsfoot__rightsect .fields input::placeholder {
+        font-size: 14px;
+    }
+
+    .contactsfoot__rightsect .fields input {
+        height: 44px;
+        margin-bottom: 24px;
+    }
+
+    .contactsfoot__rightsect .btnsect input {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .contactsfoot__rightsect {
+        padding: 60px 0;
+    }
+
+    .contactsfoot__bgpic {
+        height: 316px;
+    }
+
+    .blackfig {
+        height: 420px;
+    }
+
+    .redfig {
+        height: 375px;
+    }
+
+    .contactsfoot {
+        padding: 80px 0 55px;
+    }
+
+    .redfig {
+        top: -80px;
+        left: 18%;
+    }
+
+    .contactsfoot__leftsect {
+        padding-top: 20px;
+    }
+
+    .footer__nav ul li a {
+        font-size: 13px;
+    }
+
+    .footer ul li {
+        margin-right: 20px;
+    }
+
+    .header__language li:first-child:after {
+        right: -10px;
+    }
+
+    .totop {
+        top: -78px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .header__signsect {
+        max-width: 300px;
+    }
+
+    .header_nav {
+        max-width: 720px;
+    }
+
+    .header_nav:after {
+        width: calc(100% - 720px - 355px);
+        right: 325px;
+    }
+
+    .footer__nav {
+        max-width: 720px;
+    }
+
+    .footer__nav:after {
+        width: calc(100% - 720px - 355px);
+        right: 325px;
+        bottom: 8px;
+    }
+
+    .howitworks__box {
+        background-size: auto 100%;
+    }
+
+
+
+
+    .header_nav a,
+    .header__sign a,
+    .header__language a,
+    .phonelink {
+        font-size: 13px;
+    }
+
+    .usedcarscard__info .descr {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .sectsubtitle {
+        font-size: 16px;
+    }
+
+    .accordeon-title {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:1400.8px) {
+    .myexcontainer {
+        padding: 0 60px;
+    }
+
+    .header__leftbox {
+        max-width: 100px;
+    }
+
+    .header__rightbox {
+        max-width: calc(100% - 100px);
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .header_nav:after {
+        display: none;
+    }
+
+    .header__signsect {
+        max-width: 250px;
+    }
+
+    .header_nav li:not(:last-child),
+    .header__language li:not(:last-child) {
+        margin-right: 17px;
+    }
+
+    .header__callbox .redbtn {
+        margin-right: 15px;
+    }
+
+    .phonelink {
+        margin-right: 20px;
+    }
+
+    .header .transparrbtn,
+    .header__callbox .redbtn {
+        width: 160px;
+    }
+
+    .header__searchbox {
+        max-width: 300px;
+    }
+
+    .header_nav {
+        max-width: calc(100% - 250px);
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .mainparallaxsect__parallax #scene div:nth-child(2) img {
+        max-width: 83%;
+    }
+
+    .mainparallaxsect__parallax #scene div:nth-child(2) {
+        bottom: 80px;
+    }
+
+    .mainparallaxsect__parallax #scene div:first-child {
+        right: 42%;
+    }
+
+    .servicesdark__box {
+        height: 280px;
+    }
+
+    .servicesdark__box {
+        padding: 20px;
+    }
+
+    .servicesdark__boxcontent img {
+        margin-bottom: 15px;
+    }
+
+    .howitworks .section-boldtext,
+    .howitworks .descr {
+        max-width: 100%;
+    }
+
+    .howitworks__box .hiwdescr p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .howitworks__box {
+        height: 120px;
+    }
+
+    .contactsfoot__leftsect ul li,
+    .contactsfoot__leftsect ul li a {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .contactsfoot__leftsect {
+        padding-left: 15%;
+    }
+
+    .footer__nav ul li {
+        margin-right: 17px;
+    }
+
+    .footer .header__signsect {
+        max-width: 270px;
+    }
+
+    .footer__nav:after {
+        display: none;
+    }
+
+    .footer__nav {
+        max-width: calc(100% - 270px);
+    }
+
+    .totop span {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    .howitworks .section-title {
+        margin-bottom: 45px;
+    }
+
+    .howitworks a,
+    .totop {
+        font-size: 14px;
+    }
+
+    .header_nav a,
+    .header__sign a,
+    .header__language a,
+    .phonelink,
+    .footer__nav ul li a {
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .header__rightbox {
+        display: none;
+    }
+    .searchadaptive {
+        display: inline-block;
+    }
+    .searchadaptive .respsearchicon,
+    .burgericon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .searchadaptive .respsearchicon {
+        background-image: url('../img/icons/search-icon.svg');
+        order: 1;
+        border: none;
+        background-color: none;
+        background-color: transparent;
+    }
+
+    .burgericon {
+        background-image: url('../img/icons/burger.svg');
+        order: 3;
+    }
+
+    .header__leftbox {
+        order: 2;
+    }
+
+    .header__contentwrapp {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header.header {
+        padding: 10px 0;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    .mainparallaxsect__parallax #scene div:nth-child(2) img {
+        max-width: 100%;
+    }
+
+    .mainparallaxsect__parallax #scene div:first-child {
+        right: 27% !important;
+        top: 55px !important;
+    }
+
+    .mainparallaxsect__parallax #scene div:nth-child(2) {
+        bottom: initial;
+        top: 100px !important;
+        right: -30px;
+    }
+
+    .mainparallaxsect {
+        height: 500px;
+    }
+    .servicesdark {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+    .servicesdark__box {
+        width: 300px;
+    }
+
+    .servicesdark__slider {
+        padding-top: 33px;
+    }
+
+    .servicesdark__slider .slick-arrow {
+        height: 31px;
+        width: 60px;
+        border: none;
+        position: absolute;
+        background-image: url('../img/icons/slider-arrow.svg');
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        background-color: #CD1319;
+    }
+
+    .servicesdark__slider .slick-prev {
+        right: 62px;
+        transform: rotate(-180deg);
+    }
+    .servicesdark__slider .slick-next {
+        right: 0;
+    }
+
+    .howitworks__box {
+        padding: 15px 15px 15px 20px;
+    }
+
+    .howitworks__box .hiwnum span {
+        font-size: 34px;
+    }
+
+    .howitworks__box .hiwnum {
+        width: 70px;
+        height: 60px;
+    }
+
+    .howitworks__box .hiwdescr {
+        width: calc(100% - 70px);
+        padding-left: 10px;
+    }
+
+    .usedcars {
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    .arrowanimation {
+        display: none;
+    }
+
+    .usedcarscard__info {
+        padding: 20px;
+    }
+
+    .showmorecars {
+        margin-top: 20px;
+    }
+
+    .contactsfoot__rightsect .title {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contactsfoot__rightsect form {
+        padding-right: 30px;
+    }
+
+    .contactsfoot__rightsect .btnsect {
+        max-width: 140px;
+    }
+
+    .contactsfoot__rightsect .fields {
+        max-width: calc(100% - 140px);
+    }
+
+    .contactsfoot__leftsect {
+        padding-left: 30px;
+    }
+
+    .contactsfoot__rightsect .fields input {
+        margin-bottom: 20px;
+    }
+
+    .contactsfoot__leftsect .title {
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .contactsfoot__leftsect .phone {
+        font-size: 18px;
+        padding-left: 36px;
+    }
+
+    .contactsfoot__leftsect ul {
+        max-width: 260px;
+    }
+
+    .blackfig {
+        top: -30px;
+        height: 370px;
+    }
+
+    .contactsfoot {
+        padding: 50px 0 80px;
+    }
+
+    .redfig {
+        top: -50px;
+        left: 19%;
+        height: 315px;
+    }
+
+    .totop {
+        top: -48px;
+    }
+
+    .contactsfoot .rightres {
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer  {
+        display: none;
+    }
+
+   
+
+
+
+
+
+
+
+    .usedcarscard__info .title,
+    .usedcarscard__info .price {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .mainparallaxsect__parallax #scene {
+        display: none;
+    }
+
+    .mainparallaxsect__parallax > img {
+        display: block;
+    }
+
+    .myexcontainer {
+        padding: 0 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .mainparallaxsect__content {
+        padding-top: 40px;
+    }
+
+    .sectsubtitle {
+        margin-bottom: 50px;
+    }
+
+    .mainparallaxsect {
+        height: auto;
+    }
+
+    h1 br {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .howitworks {
+        padding: 60px 0;
+    }
+
+}
