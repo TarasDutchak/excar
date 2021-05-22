@@ -1,7 +1,9 @@
 $(document).ready(function () {
     // parallax
-    var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene);
+    if($('body *').is('#scene')) {
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    }
 
     // accordeon plus minus
 
@@ -11,7 +13,7 @@ $(document).ready(function () {
     });
 
     // to top
-    $('.totop').click(function () {
+    $('.totop, .foottotop').click(function () {
         $("html, body").animate({
             scrollTop: 0
         }, "slow");
@@ -31,6 +33,11 @@ $(document).ready(function () {
                     responsive: [{
                         breakpoint: 1024,
                         settings: {
+                        },
+                        breakpoint: 576,
+                        settings: {
+                            variableWidth: false,
+                            slidesToShow: 1,
                         }
                     }]
         });
@@ -64,10 +71,14 @@ $(document).ready(function () {
         }
     });
 
+    // mob menu
 
-
-
-
+    $('.burgericon').click(function(){
+        $('.mobile-menu').addClass('show');
+    });
+    $('.closemenu').click(function(){
+        $('.mobile-menu').removeClass('show');
+    });
 
 
 
