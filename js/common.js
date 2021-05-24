@@ -88,69 +88,81 @@ $(document).ready(function () {
             $('select').styler();
         });
     }
-    
-    // RANGE SLIDER
 
-        $('.noUi-handle').on('click', function() {
-          $(this).width(50);
+    // RANGE SLIDER
+    if ($('body *').is('#slider-range')) {
+        $('.noUi-handle').on('click', function () {
+            $(this).width(50);
         });
         var rangeSlider = document.getElementById('slider-range');
         var moneyFormat = wNumb({
-          decimals: 0,
-          thousand: ',',
-          prefix: '$ '
+            decimals: 0,
+            thousand: ',',
+            prefix: '$ '
         });
         noUiSlider.create(rangeSlider, {
-          start: [5000, 200000],
-          step: 1,
-          range: {
-            'min': [5000],
-            'max': [200000]
-          },
-          format: moneyFormat,
-          connect: true
-        });
-        
-        // Set visual min and max values and also update value hidden form inputs
-        rangeSlider.noUiSlider.on('update', function(values, handle) {
-          document.getElementById('slider-range-value1').innerHTML = values[0];
-          document.getElementById('slider-range-value2').innerHTML = values[1];
-          document.getElementsByName('min-value').value = moneyFormat.from(
-            values[0]);
-          document.getElementsByName('max-value').value = moneyFormat.from(
-            values[1]);
-        });
-      
-        // catalog selects
-        $('.selectimitation__selitem').click(function(){
-            $(this).toggleClass('open');
-            $(this).next('.selectimitation__sellist').toggle();
+            start: [5000, 200000],
+            step: 1,
+            range: {
+                'min': [5000],
+                'max': [200000]
+            },
+            format: moneyFormat,
+            connect: true
         });
 
-        $(document).click(function (event) {
-            let $target = $(event.target);
-            if (!$target.closest('.selectimitation').length) {
-                $('.selectimitation__sellist').hide();
-                $('.selectimitation__selitem').removeClass('open');
-            }
+
+
+
+        // Set visual min and max values and also update value hidden form inputs
+        rangeSlider.noUiSlider.on('update', function (values, handle) {
+            document.getElementById('slider-range-value1').innerHTML = values[0];
+            document.getElementById('slider-range-value2').innerHTML = values[1];
+            document.getElementsByName('min-value').value = moneyFormat.from(
+                values[0]);
+            document.getElementsByName('max-value').value = moneyFormat.from(
+                values[1]);
         });
-        // текст вибраного інпута
-        $('.selectimitation__checkrow label').click(function(){
-            var textLab = $(this).text();
-            $('.selectimitation__selitem span:not(.selectimitation__arrow)').text(textLab);
-        });
-        // вирубаєм всі інпути якщо вибрали "всі бренди"
-        $('#allbarands').change(function(){
-            if ($(this).is(':checked')) {
-                $('.selectimitation__checkrow input').not($(this)).prop('checked', false)
-            }
-        });
-        // якщо вибитраєм модель то "всі бренди" вирубаємо
-        $('.selectimitation__checkrow input:not(#allbarands)').change(function(){
-            if ($(this).is(':checked')) {
-                $('.selectimitation__checkrow input#allbarands').prop('checked', false)
-            }
-        });
+    }
+
+    // catalog selects
+    $('.selectimitation__selitem').click(function () {
+        $('.selectimitation__sellist').not($(this).next('.selectimitation__sellist')).hide();
+        $('.selectimitation__selitem').not($(this)).removeClass('open');
+        $(this).toggleClass('open');
+        $(this).next('.selectimitation__sellist').toggle();
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.selectimitation').length) {
+            $('.selectimitation__sellist').hide();
+            $('.selectimitation__selitem').removeClass('open');
+        }
+    });
+
+    // вирубаєм всі інпути якщо вибрали "всі бренди"
+    $('.allcheck').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parents('.leftcatfilter-block').find('.selectimitation__checkrow input').not($(this)).prop('checked', false);
+        }
+    });
+    // якщо вибитраєм модель то "всі бренди" вирубаємо
+    $('.selectimitation__checkrow input:not(.allcheck)').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parents('.leftcatfilter-block').find('.selectimitation__checkrow input.allcheck').not($(this)).prop('checked', false);
+        }
+    });
+
+
+
+    // catalog labels remove
+    $('.choseditem span').click(function () {
+        $(this).parent().remove();
+    });
+    $('.choseditem.clearall span').click(function () {
+        $('.choseditem').remove();
+    });
 
 
 });
